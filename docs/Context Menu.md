@@ -2,7 +2,9 @@
 
 **All Editors**
 ![](/docs/Context%20Menu_CtxMenu1.PNG)
+
 ![](/docs/Context%20Menu_setstatusctxmenu.PNG)
+
 ![](/docs/Context%20Menu_setstatus.PNG)
 
 **Date and Time**
