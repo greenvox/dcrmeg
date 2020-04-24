@@ -10,7 +10,7 @@
 </li><li>Set record status </li><li>Optional auto save and auto refresh on save </li><li>Sorting </li><li>Paging </li><li>Navigation via keyboard arrows or tab keys </li><li>Unlimited undo - Place focus on a cell that has gone through one/multiple changes, use undo button to traverse back through the changes until reaching the original value.
 </li><li>Undo all changes - Resets all changed cells to their original value. </li><li>Open record from the grid (in the same window or in a new window) </li></ul>
 <p>
-<img title="GridConfigSec1.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_GridWithColors.PNG"><br>
+<img title="GridConfigSec1.PNG" src="/raw/master/docs/Home_GridWithColors.PNG"><br>
 <br>
 <br>
 <img title="GridConfigSec1.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_GridWithColors2.PNG"><br>
