@@ -34,6 +34,7 @@
   <li><a href="/docs/Display%20Two%20Unrelated%20Entities.md">Display Two Unrelated Entities</a></li>
   <li><a href="/docs/Display%20Two%20related%20Entities.md">Display Two Related Entities</a></li>
   <li><a href="/docs/Configuration%20Page.md">Setup the Configuration Page<a/></li>
+  <li><a href="docs/Context%20Menu.md">Context Menu</a></li>
 </ul>
   
  <p>This is a fork of the project originally created by <a href="https://github.com/mehrgithub"><strong>MehrGitHub</strong></a>.
