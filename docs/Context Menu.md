@@ -3,8 +3,10 @@
 **All Editors**
 ![](/docs/Context%20Menu_CtxMenu1.PNG)
 
+Text Menu
 ![](/docs/Context%20Menu_setstatusctxmenu.PNG)
 
+Status Menu
 ![](/docs/Context%20Menu_setstatus.PNG)
 
 **Date and Time**
