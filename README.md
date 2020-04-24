@@ -16,15 +16,15 @@
 <img title="GridConfigSec1.PNG" src="/docs/Home_GridWithColors2.PNG"><br>
 <br>
 <br>
-<img title="GridConfigSec1.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_GridConfigSec1.PNG"><br>
+<img title="GridConfigSec1.PNG" src="/docs/Home_GridConfigSec1.PNG"><br>
 <br>
-<img title="GridConfigSec2.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_GridConfigSec2.PNG"><br>
+<img title="GridConfigSec2.PNG" src="/docs/Home_GridConfigSec2.PNG"><br>
 <br>
 <strong>Translation</strong><br>
 <br>
-<img title="Translations.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_Translations.PNG"><br>
+<img title="Translations.PNG" src="/docs/Home_Translations.PNG"><br>
 <br>
 <strong>Display on a dashboard</strong><br>
 <br>
-<img title="embeddashboard.PNG" src="https://github.com/mehrgithub/dcrmeg/raw/master/docs/Home_embeddashboard.PNG"></p>
+<img title="embeddashboard.PNG" src="/docs/Home_embeddashboard.PNG"></p>
 </div><div class="ClearBoth"></div>
