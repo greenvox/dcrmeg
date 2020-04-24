@@ -28,3 +28,9 @@
 <br>
 <img title="embeddashboard.PNG" src="/docs/Home_embeddashboard.PNG"></p>
 </div><div class="ClearBoth"></div>
+
+<h2>How to:</h2>
+<ul>
+  <li><a href="/docs/Display%20Two%20Unrelated%20Entities.md">Display Two Unrelated Entities</a></li>
+</ul>
+  
