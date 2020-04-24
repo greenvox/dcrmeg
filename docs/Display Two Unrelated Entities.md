@@ -34,7 +34,7 @@
 
 **Add a new web resource to the tab.**
 
-![](Display Two Unrelated Entities_case4copy.PNG)
+![Image 30](Display Two Unrelated Entities_case4copy.PNG)
 
 **For the web resource, enter "dcrmeg_dcrmeghtml". Enter a name for the web resource.**
 
