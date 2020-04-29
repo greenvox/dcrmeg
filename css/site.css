@@ -1566,7 +1566,7 @@ position:relative;
         }
 
 /* Resizer */
-.JColResizer{table-layout:fixed;} 
+.JColResizer{table-layout:auto;} 
 .JColResizer td, .JColResizer th{overflow:hidden;padding-left:0!important; padding-right:0!important;}  
 .JCLRgrips{ height:0px; position:relative;} 
 .JCLRgrip{margin-left:-5px; position:absolute; z-index:5;} 
