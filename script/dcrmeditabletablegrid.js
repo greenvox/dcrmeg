@@ -7981,7 +7981,7 @@ function CreateGridContainers(data, parentcontainer) {
 
     // Table
     containerIds.Table = _thisHelpers.GenerateUUID();
-    var $Grid = $('<table class="pure-table tablesorter"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
+    var $Grid = $('<table class="pure-table tablesorter custom-css"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
         .attr('id', containerIds.Table)
         .attr('data-item-schema', data.Entity.SchemaName)
         .attr('data-item-entityname', data.Entity.Label)
