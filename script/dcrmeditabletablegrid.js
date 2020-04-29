@@ -6516,12 +6516,12 @@ function DisplayNewButtonMenu(self, $this) {
  parameters["parentcustomeridname"] = "Contoso";
  parameters["parentcustomeridtype"] = "account";
 
-For simple lookups you must set the value and the text to display in the lookup. Use the suffix “name” with the name of the attribute to set the value for the text.
-Don’t use any other arguments.
+For simple lookups you must set the value and the text to display in the lookup. Use the suffix ï¿½nameï¿½ with the name of the attribute to set the value for the text.
+Donï¿½t use any other arguments.
 For customer and owner lookups you must set the value and the name in the same way you set them for simple lookups.
-In addition you must use the suffix “type” to specify the type of entity.
+In addition you must use the suffix ï¿½typeï¿½ to specify the type of entity.
 Allowable values are account, contact, systemuser, and team.
-You can’t set the values for partylist or regarding lookups.
+You canï¿½t set the values for partylist or regarding lookups.
                     */
                     var parameters = {};
 
@@ -7810,6 +7810,7 @@ function CreateGridContainers(data, parentcontainer) {
         .attr('id', containerIds.GridToolbar)
         .appendTo($toolbarbuttonscontainer);
 
+    // Allow Create New Button
     containerIds.AddNewRec = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.AddNewRec)
@@ -7821,6 +7822,7 @@ function CreateGridContainers(data, parentcontainer) {
         $tmpBtn.hide();
     }
 
+    // Allow Delete Button
     containerIds.DeleteRec = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.DeleteRec)
@@ -7832,6 +7834,7 @@ function CreateGridContainers(data, parentcontainer) {
         $tmpBtn.hide();
     }
 
+    // Allow Auto Save Changes Button
     containerIds.SaveChanges = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.SaveChanges)
@@ -7843,6 +7846,7 @@ function CreateGridContainers(data, parentcontainer) {
         $tmpBtn.hide();
     }
 
+    // Undo Save Changes Button
     containerIds.UndoChanges = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.UndoChanges)
@@ -7854,6 +7858,7 @@ function CreateGridContainers(data, parentcontainer) {
         $tmpBtn.hide();
     }
 
+    // Undo All Save Changes Button
     containerIds.CancelAllChanges = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.CancelAllChanges)
@@ -7865,6 +7870,7 @@ function CreateGridContainers(data, parentcontainer) {
         $tmpBtn.hide();
     }
 
+    // Allow Export to Excel Button
     containerIds.ExportToExcel = _thisHelpers.GenerateUUID();
     $tmpBtn = $('<button></button>')
         .attr('id', containerIds.ExportToExcel)
