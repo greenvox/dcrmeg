@@ -1,0 +1,7 @@
+table.scrollable tbody tr td:nth-of-type(2) {
+    position: sticky;
+    z-index: 0;
+}
+table.scrollable {
+    table-layout:auto;
+}
