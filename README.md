@@ -35,6 +35,17 @@
   <li><a href="/docs/Display%20Two%20related%20Entities.md">Display Two Related Entities</a></li>
   <li><a href="/docs/Configuration%20Page.md">Setup the Configuration Page<a/></li>
   <li><a href="docs/Context%20Menu.md">Context Menu</a></li>
+  <li><a href="docs/First%20Configuration%20Set%20Up%20-%20Display%20One%20Entity.md">First Configuration Set Up - Display One Entity</a></li>
+  <li><a href="docs/Opportunity.md">Opportunity</a></li>
+  <li><a href="docs/Products%20Grid.md">Products Grid</a></li>
+  <li><a href="docs/Quote%20Products.md">Quote Products</a></li>
+  <li><a href="docs/Toolbar.md">Toolbar</a></li>
+  <li><a href="docs/Installation.md">Installation</a></li>
+  <li><a href="docs/Grid%20Toolbar.md">Grid Toolbar</a></li>
+  <li><a href="docs/Grid%20Pager.md">Grid Pager</a></li>
+  <li><a href="docs/Field%20Conditions.md">Field Conditions</a></li>
+  <li><a href="docs/Editors.md">Editors</a></li>
+  <li><a href="docs/Documentation.md">Documentation</a></li>
 </ul>
   
  <p>This is a fork of the project originally created by <a href="https://github.com/mehrgithub"><strong>MehrGitHub</strong></a>.
