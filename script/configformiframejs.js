@@ -3070,7 +3070,7 @@ function InitializeSetupRoutines() {
     $("#displaysetrecordstatelabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displaysetrecordstatelabel").text());
     $("#displayclonerecordlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displayclonerecordlabel").text());
     $("#displayclonerecordbuttonlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displayclonerecordbuttonlabel").text());
-    $("#openrecordbehavoirlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#openrecordbehavoirlabel").text());
+    $("#openrecordbehaviorlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#openrecordbehaviorlabel").text());
 
     if ((window.parent.OnFormSaveFunctionCallback != 'undefined') && (window.parent.OnFormSaveFunctionCallback != undefined) &&
         (typeof window.parent.OnFormSaveFunctionCallback === 'function')) {
@@ -3142,7 +3142,7 @@ function InitializeSetupRoutines() {
 
         SetParentFormDirty();
     });
-    $('#openrecordbehavoir').on('change', function (e) {
+    $('#openrecordbehavior').on('change', function (e) {
         var val = $(this).val();
         _thisGlobals._CurConfiguration.OpenRecordBehavoir = val;
 
@@ -3701,7 +3701,7 @@ function InitializeSetupRoutines() {
         $('#displaysetrecordstate').attr('disabled', 'disabled');
         $('#displayclonerecord').attr('disabled', 'disabled');
         $('#displayclonerecordbutton').attr('disabled', 'disabled');
-        $('#openrecordbehavoir').prop('disabled', 'disabled');
+        $('#openrecordbehavior').prop('disabled', 'disabled');
         
         $('#deleteallfieldconditionsbtn').attr('disabled', 'disabled');
 
@@ -4716,7 +4716,7 @@ function DisplaySelectedEntityInfo(li, schema) {
     $('#maxrecordperpage').val(_thisGlobals._CurConfiguration.RecordsPerPage);
     $('#createnewbtnclick').val(_thisGlobals._CurConfiguration.NewBtnBehavoir);
     $('#booleaneditorbehaviour').val(_thisGlobals._CurConfiguration.BooleanEditorBehavoir);
-    $('#openrecordbehavoir').val(_thisGlobals._CurConfiguration.OpenRecordBehavoir);
+    $('#openrecordbehavior').val(_thisGlobals._CurConfiguration.OpenRecordBehavoir);
     $('#datetimeeditorminutestep').val(_thisGlobals._CurConfiguration.DateTimeMinuteStep);
     RetreiveEntityMetadata(schema);
 }

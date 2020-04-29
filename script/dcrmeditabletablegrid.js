@@ -3615,7 +3615,7 @@ var CrmEditableGrid = (function () {
                         .css({ 'left': left, 'top': top })
                         .SetInternals(curText);
                 } else if (curEditor.EditorType == DCrmEditableGrid.Editors.Checkbox) {
-                    if (self.activeOptions.BooleanEditorBehavoir == "20") {
+                    if (self.activeOptions.BooleanEditorBehavior == "20") {
                         curEditor
                             .css('left', self.activeCell.offset().left)
                             .css('top', self.activeCell.offset().top)
@@ -5556,15 +5556,15 @@ http://localhost/Demo/main.aspx?etc=112&extraqs=?_CreateFromId=%7b5B6DFA60-6456-
                 } else {
                     self.GridConfiguration.MSProductGridHelperc.DisplayNativePricelistSelect();
                 }
-            } else if (self.activeOptions.NewBtnBehavoir == "30") {
+            } else if (self.activeOptions.NewBtnBehavior == "30") {
                 DisplayNewButtonMenu(who, $(this));
-            } else if (self.activeOptions.NewBtnBehavoir == "20") {
+            } else if (self.activeOptions.NewBtnBehavior == "20") {
                 try {
                     window.parent.Xrm.Utility.openEntityForm(self.activeOptions.ParentEntityInfo.ParentEntitySchemaname);
                 } catch (e) {
                     msg = e.message;
                 }
-            } else if (self.activeOptions.NewBtnBehavoir == "10") {
+            } else if (self.activeOptions.NewBtnBehavior == "10") {
                 msg = CreateInlineRecord(who);
             }
 
@@ -6104,7 +6104,7 @@ http://localhost/Demo/main.aspx?etc=112&extraqs=?_CreateFromId=%7b5B6DFA60-6456-
 
                         var $parentrow = $(this).parent().parent();
                         if (($parentrow) && ($parentrow.length > 0)) {
-                            if (gridOptions.OpenRecordBehavoir == '10') {
+                            if (gridOptions.OpenRecordBehavior == '10') {
                                 window.parent.Xrm.Utility.openEntityForm(gridOptions.ParentEntityInfo.ParentEntitySchemaname,
                                     $($parentrow).attr(_thisGlobals.DataAttr.Cell.RecordGuid));
                             } else {
@@ -7981,7 +7981,7 @@ function CreateGridContainers(data, parentcontainer) {
 
     // Table
     containerIds.Table = _thisHelpers.GenerateUUID();
-    var $Grid = $('<table class="pure-table tablesorter custom-css"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
+    var $Grid = $('<table class="pure-table tablesorter scrollable"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
         .attr('id', containerIds.Table)
         .attr('data-item-schema', data.Entity.SchemaName)
         .attr('data-item-entityname', data.Entity.Label)
@@ -9198,7 +9198,7 @@ var DCrmEGConfigurationManager = (function () {
         self.DisplaySetRecordState = ((data.DisplaySetRecordState) && (data.DisplaySetRecordState == 'false')) ? false : true;
         self.DisplayCloneRecord = ((data.DisplayCloneRecord) && (data.DisplayCloneRecord == 'false')) ? false : true;
         self.DisplayCloneRecordButton = ((data.DisplayCloneRecordButton) && (data.DisplayCloneRecordButton == 'false')) ? false : true;
-        self.OpenRecordBehavoir = ((data.OpenRecordBehavoir) && (data.OpenRecordBehavoir != 'undefined')) ? data.OpenRecordBehavoir : "10";
+        self.OpenRecordBehavior = ((data.OpenRecordBehavior) && (data.OpenRecordBehavior != 'undefined')) ? data.OpenRecordBehavior : "10";
         self.PasteFromExcel = ((data.PasteFromExcel) && (data.PasteFromExcel == 'true')) ? true : false;
 
         self.HasStatusField = (data.HasStatusField) ? data.HasStatusField : undefined;
@@ -9210,8 +9210,8 @@ var DCrmEGConfigurationManager = (function () {
         self.RefreshAfterCreate = ((data.RefreshAfterCreate) && (data.RefreshAfterCreate == 'false')) ? false : true;
         self.RefreshAfterSave = ((data.RefreshAfterSave) && (data.RefreshAfterSave == 'true')) ? true : false;
         self.SortOrder = ((data.SortOrder) && (data.SortOrder != 'undefined')) ? data.SortOrder : undefined;
-        self.NewBtnBehavoir = ((data.NewBtnBehavoir) && (data.NewBtnBehavoir != 'undefined')) ? data.NewBtnBehavoir : "30";
-        self.BooleanEditorBehavoir = ((data.BooleanEditorBehavoir) && (data.BooleanEditorBehavoir != 'undefined')) ? data.BooleanEditorBehavoir : "20";
+        self.NewBtnBehavior = ((data.NewBtnBehavior) && (data.NewBtnBehavior != 'undefined')) ? data.NewBtnBehavior : "30";
+        self.BooleanEditorBehavior = ((data.BooleanEditorBehavior) && (data.BooleanEditorBehavior != 'undefined')) ? data.BooleanEditorBehavior : "20";
         self.HideAutosaveButton = ((data.HideAutosaveButton) && (data.HideAutosaveButton == 'true')) ? true : false;
         self.DateTimeMinuteStep = ((data.DateTimeMinuteStep) && (data.DateTimeMinuteStep != 'undefined')) ? parseInt(data.DateTimeMinuteStep) : 5;
 
@@ -9706,8 +9706,8 @@ Related [false] RelatedEntityLookup [undefined]
             data.RefreshAfterCreate = ((tmp.length > 14) ? tmp[14] : true);
             data.RefreshAfterSave = ((tmp.length > 15) ? tmp[15] : false);
             data.SortOrder = ((tmp.length > 16) ? ((tmp[16].length > 0) ? tmp[16] : undefined) : undefined);
-            data.NewBtnBehavoir = ((tmp.length > 17) ? tmp[17] : undefined);
-            data.BooleanEditorBehavoir = ((tmp.length > 18) ? tmp[18] : undefined);
+            data.NewBtnBehavior = ((tmp.length > 17) ? tmp[17] : undefined);
+            data.BooleanEditorBehavior = ((tmp.length > 18) ? tmp[18] : undefined);
             data.HideAutosaveButton = ((tmp.length > 19) ? tmp[19] : undefined);
             data.GridTitle = ((tmp.length > 20) ? tmp[20] : undefined);
             data.DisplayClearFilterButton = ((tmp.length > 21) ? tmp[21] : true);
@@ -9716,7 +9716,7 @@ Related [false] RelatedEntityLookup [undefined]
             data.DisplaySetRecordState = ((tmp.length > 24) ? tmp[24] : true);
             data.DisplayCloneRecord = ((tmp.length > 25) ? tmp[25] : true);
             data.DisplayCloneRecordButton = ((tmp.length > 26) ? tmp[26] : true);
-            data.OpenRecordBehavoir = ((tmp.length > 27) ? tmp[27] : undefined);
+            data.OpenRecordBehavior = ((tmp.length > 27) ? tmp[27] : undefined);
             data.PasteFromExcel = ((tmp.length > 28) ? tmp[28] : false);
             data.DateTimeMinuteStep = ((tmp.length > 29) ? tmp[29] : undefined);
         }
@@ -10935,9 +10935,9 @@ var GridLoaderHelper = (function () {
                     AllowDelete: self.data.AllowDelete,
                     RefreshAfterCreate: self.data.RefreshAfterCreate,
                     RefreshAfterSave: self.data.RefreshAfterSave,
-                    NewBtnBehavoir: self.data.NewBtnBehavoir,
-                    BooleanEditorBehavoir: self.data.BooleanEditorBehavoir,
-                    OpenRecordBehavoir: self.data.OpenRecordBehavoir,
+                    NewBtnBehavior: self.data.NewBtnBehavior,
+                    BooleanEditorBehavior: self.data.BooleanEditorBehavior,
+                    OpenRecordBehavior: self.data.OpenRecordBehavior,
                     DateTimeMinuteStep: self.data.DateTimeMinuteStep
                 };
 
