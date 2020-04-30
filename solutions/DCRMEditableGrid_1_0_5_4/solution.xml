@@ -1,0 +1,171 @@
+<ImportExportXml version="6.1.0004.0145" SolutionPackageVersion="6.1" languagecode="1033" generatedBy="OnPremise" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>DCRMEditableGrid</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="D CRM Editable Grid" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A zero code editable grid for CRM 2013, 2015, and 2016." languagecode="1033" />
+    </Descriptions>
+    <Version>1.0.5.4</Version>
+    <Managed>0</Managed>
+    <ConfigurationPage>dcrmeg_solutionconfig</ConfigurationPage>
+    <Publisher>
+      <UniqueName>mehrdadhatteffi</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Mehrdad Hatteffi" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress>mehrhat@gmail.com</EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>dcrmeg</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City>Ottawa</City>
+          <County xsi:nil="true"></County>
+          <Country>Canada</Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince>Ontario</StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="dcrmeg_dcrmegconfiguration" />
+      <RootComponent type="1" schemaName="dcrmeg_dcrmegtranslation" />
+      <RootComponent type="9" schemaName="dcrmeg_fieldsdisplayoptions" />
+      <RootComponent type="61" schemaName="dcrmeg_addnew" />
+      <RootComponent type="61" schemaName="dcrmeg_addnewhover" />
+      <RootComponent type="61" schemaName="dcrmeg_aes" />
+      <RootComponent type="61" schemaName="dcrmeg_aggregate" />
+      <RootComponent type="61" schemaName="dcrmeg_barebonetip" />
+      <RootComponent type="61" schemaName="dcrmeg_calendar" />
+      <RootComponent type="61" schemaName="dcrmeg_clone" />
+      <RootComponent type="61" schemaName="dcrmeg_close24" />
+      <RootComponent type="61" schemaName="dcrmeg_configformcss" />
+      <RootComponent type="61" schemaName="dcrmeg_configformhtml" />
+      <RootComponent type="61" schemaName="dcrmeg_configformiframejs" />
+      <RootComponent type="61" schemaName="dcrmeg_configformjs" />
+      <RootComponent type="61" schemaName="dcrmeg_csv16" />
+      <RootComponent type="61" schemaName="dcrmeg_dcrmeg" />
+      <RootComponent type="61" schemaName="dcrmeg_dcrmeghtml" />
+      <RootComponent type="61" schemaName="dcrmeg_delete" />
+      <RootComponent type="61" schemaName="dcrmeg_deletecan16" />
+      <RootComponent type="61" schemaName="dcrmeg_deletehover" />
+      <RootComponent type="61" schemaName="dcrmeg_editablegrid16" />
+      <RootComponent type="61" schemaName="dcrmeg_editbalegridicon32" />
+      <RootComponent type="61" schemaName="dcrmeg_editproperty16" />
+      <RootComponent type="61" schemaName="dcrmeg_error" />
+      <RootComponent type="61" schemaName="dcrmeg_excel" />
+      <RootComponent type="61" schemaName="dcrmeg_export16" />
+      <RootComponent type="61" schemaName="dcrmeg_filter" />
+      <RootComponent type="61" schemaName="dcrmeg_filterclearall" />
+      <RootComponent type="61" schemaName="dcrmeg_filterhover" />
+      <RootComponent type="61" schemaName="dcrmeg_find" />
+      <RootComponent type="61" schemaName="dcrmeg_first" />
+      <RootComponent type="61" schemaName="dcrmeg_firstgrey" />
+      <RootComponent type="61" schemaName="dcrmeg_info" />
+      <RootComponent type="61" schemaName="dcrmeg_info24" />
+      <RootComponent type="61" schemaName="dcrmeg_jqdtpj" />
+      <RootComponent type="61" schemaName="dcrmeg_jqmw" />
+      <RootComponent type="61" schemaName="dcrmeg_jquery2" />
+      <RootComponent type="61" schemaName="dcrmeg_jquerysortable" />
+      <RootComponent type="61" schemaName="dcrmeg_jszip" />
+      <RootComponent type="61" schemaName="dcrmeg_last" />
+      <RootComponent type="61" schemaName="dcrmeg_lastgrey" />
+      <RootComponent type="61" schemaName="dcrmeg_lock" />
+      <RootComponent type="61" schemaName="dcrmeg_lockhover" />
+      <RootComponent type="61" schemaName="dcrmeg_minus16" />
+      <RootComponent type="61" schemaName="dcrmeg_minushover16" />
+      <RootComponent type="61" schemaName="dcrmeg_next" />
+      <RootComponent type="61" schemaName="dcrmeg_nextgrey" />
+      <RootComponent type="61" schemaName="dcrmeg_openrec" />
+      <RootComponent type="61" schemaName="dcrmeg_pdf16" />
+      <RootComponent type="61" schemaName="dcrmeg_pdfmake" />
+      <RootComponent type="61" schemaName="dcrmeg_pdfmakefonts" />
+      <RootComponent type="61" schemaName="dcrmeg_prev" />
+      <RootComponent type="61" schemaName="dcrmeg_prevgrey" />
+      <RootComponent type="61" schemaName="dcrmeg_product" />
+      <RootComponent type="61" schemaName="dcrmeg_productassociation" />
+      <RootComponent type="61" schemaName="dcrmeg_productbundle" />
+      <RootComponent type="61" schemaName="dcrmeg_productfamily" />
+      <RootComponent type="61" schemaName="dcrmeg_record" />
+      <RootComponent type="61" schemaName="dcrmeg_refresh16" />
+      <RootComponent type="61" schemaName="dcrmeg_save" />
+      <RootComponent type="61" schemaName="dcrmeg_saveani" />
+      <RootComponent type="61" schemaName="dcrmeg_savehover" />
+      <RootComponent type="61" schemaName="dcrmeg_select2js" />
+      <RootComponent type="61" schemaName="dcrmeg_settings" />
+      <RootComponent type="61" schemaName="dcrmeg_site" />
+      <RootComponent type="61" schemaName="dcrmeg_solutionconfig" />
+      <RootComponent type="61" schemaName="dcrmeg_sort" />
+      <RootComponent type="61" schemaName="dcrmeg_sortable" />
+      <RootComponent type="61" schemaName="dcrmeg_sortasc" />
+      <RootComponent type="61" schemaName="dcrmeg_sortdesc" />
+      <RootComponent type="61" schemaName="dcrmeg_sortdown" />
+      <RootComponent type="61" schemaName="dcrmeg_sortup" />
+      <RootComponent type="61" schemaName="dcrmeg_spectrum" />
+      <RootComponent type="61" schemaName="dcrmeg_spectrumjs" />
+      <RootComponent type="61" schemaName="dcrmeg_spinner" />
+      <RootComponent type="61" schemaName="dcrmeg_tabsectiondown" />
+      <RootComponent type="61" schemaName="dcrmeg_tabsectionright" />
+      <RootComponent type="61" schemaName="dcrmeg_testgridcallback" />
+      <RootComponent type="61" schemaName="dcrmeg_undo" />
+      <RootComponent type="61" schemaName="dcrmeg_undoall" />
+      <RootComponent type="61" schemaName="dcrmeg_webapisdk" />
+      <RootComponent type="61" schemaName="dcrmeg_writeinproduct" />
+      <RootComponent type="61" schemaName="dcrmeg_xdate" />
+      <RootComponent type="61" schemaName="dcrmeg_xrmservicetoolkit" />
+    </RootComponents>
+    <MissingDependencies />
+  </SolutionManifest>
+</ImportExportXml>
