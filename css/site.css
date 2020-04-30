@@ -1,6 +1,4 @@
-﻿@import url('custom.css');
-
-body {
+﻿body {
     padding: 0;
     margin: 0;
     font-family: Segoe UI,Tahoma,Arial;
@@ -2280,3 +2278,12 @@ position:relative;
     .linkedentityfiltersbtncontainer button:focus {
         background-color: #eeeeee;
     }
+	
+/*--- CUSTOM ---*/	
+table.scrollable tbody tr td:nth-of-type(2) {
+    position: sticky;
+    z-index: 0;
+}
+table.scrollable {
+    table-layout:auto;
+}
