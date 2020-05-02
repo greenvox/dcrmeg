@@ -3070,7 +3070,7 @@ function InitializeSetupRoutines() {
     $("#displaysetrecordstatelabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displaysetrecordstatelabel").text());
     $("#displayclonerecordlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displayclonerecordlabel").text());
     $("#displayclonerecordbuttonlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#displayclonerecordbuttonlabel").text());
-    $("#openrecordbehavoirlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#openrecordbehavoirlabel").text());
+    $("#openrecordbehaviorlabel").addClass(_thisGlobals.ToolTipClassSelector).attr(_thisGlobals.ToolTipAttrName, $("#openrecordbehaviorlabel").text());
 
     if ((window.parent.OnFormSaveFunctionCallback != 'undefined') && (window.parent.OnFormSaveFunctionCallback != undefined) &&
         (typeof window.parent.OnFormSaveFunctionCallback === 'function')) {
@@ -3142,9 +3142,9 @@ function InitializeSetupRoutines() {
 
         SetParentFormDirty();
     });
-    $('#openrecordbehavoir').on('change', function (e) {
+    $('#openrecordbehavior').on('change', function (e) {
         var val = $(this).val();
-        _thisGlobals._CurConfiguration.OpenRecordBehavoir = val;
+        _thisGlobals._CurConfiguration.OpenRecordBehavior = val;
 
         SetParentFormDirty();
     });
@@ -3198,13 +3198,13 @@ function InitializeSetupRoutines() {
     });
     $('#createnewbtnclick').on('change', function (e) {
         var val = $(this).val();
-        _thisGlobals._CurConfiguration.NewBtnBehavoir = val; // 10 inline, 20 new window, 30 show menu (Default)
+        _thisGlobals._CurConfiguration.NewBtnBehavior = val; // 10 inline, 20 new window, 30 show menu (Default)
 
         SetParentFormDirty();
     });
     $('#booleaneditorbehaviour').on('change', function (e) {
         var val = $(this).val();
-        _thisGlobals._CurConfiguration.BooleanEditorBehavoir = val; // 10 one click, 20 dislay editor (default)
+        _thisGlobals._CurConfiguration.BooleanEditorBehavior = val; // 10 one click, 20 dislay editor (default)
 
         SetParentFormDirty();
     });
@@ -3701,7 +3701,7 @@ function InitializeSetupRoutines() {
         $('#displaysetrecordstate').attr('disabled', 'disabled');
         $('#displayclonerecord').attr('disabled', 'disabled');
         $('#displayclonerecordbutton').attr('disabled', 'disabled');
-        $('#openrecordbehavoir').prop('disabled', 'disabled');
+        $('#openrecordbehavior').prop('disabled', 'disabled');
         
         $('#deleteallfieldconditionsbtn').attr('disabled', 'disabled');
 
@@ -4458,7 +4458,7 @@ var DCrmEGConfigurationManager = (function () {
         self.DisplaySetRecordState = ((data.DisplaySetRecordState) && (data.DisplaySetRecordState == 'false')) ? false : true;
         self.DisplayCloneRecord = ((data.DisplayCloneRecord) && (data.DisplayCloneRecord == 'false')) ? false : true;
         self.DisplayCloneRecordButton = ((data.DisplayCloneRecordButton) && (data.DisplayCloneRecordButton == 'false')) ? false : true;
-        self.OpenRecordBehavoir = ((data.OpenRecordBehavoir) && (data.OpenRecordBehavoir != 'undefined')) ? data.OpenRecordBehavoir : "10";
+        self.OpenRecordBehavior = ((data.OpenRecordBehavior) && (data.OpenRecordBehavior != 'undefined')) ? data.OpenRecordBehavior : "10";
         
         self.HasStatusField = (data.HasStatusField) ? data.HasStatusField : undefined;
         self.DisplaySum = ((data.DisplaySum) && (data.DisplaySum == 'false')) ? false : true;
@@ -4473,8 +4473,8 @@ var DCrmEGConfigurationManager = (function () {
         self.PasteFromExcel = ((data.PasteFromExcel) && (data.PasteFromExcel == 'true')) ? true : false;
         
         self.SortOrder = ((data.SortOrder) && (data.SortOrder != 'undefined')) ? data.SortOrder : undefined;
-        self.NewBtnBehavoir = ((data.NewBtnBehavoir) && (data.NewBtnBehavoir != 'undefined')) ? data.NewBtnBehavoir : "30";
-        self.BooleanEditorBehavoir = ((data.BooleanEditorBehavoir) && (data.BooleanEditorBehavoir != 'undefined')) ? data.BooleanEditorBehavoir : "20";
+        self.NewBtnBehavior = ((data.NewBtnBehavior) && (data.NewBtnBehavior != 'undefined')) ? data.NewBtnBehavior : "30";
+        self.BooleanEditorBehavior = ((data.BooleanEditorBehavior) && (data.BooleanEditorBehavior != 'undefined')) ? data.BooleanEditorBehavior : "20";
         self.DateTimeMinuteStep = ((data.DateTimeMinuteStep) && (data.DateTimeMinuteStep != 'undefined')) ? data.DateTimeMinuteStep : "5";
 
         self.HideAutosaveButton = ((data.HideAutosaveButton) && (data.HideAutosaveButton == 'true')) ? true : false;
@@ -4657,8 +4657,8 @@ var DCrmEGConfigurationManager = (function () {
     //            RefreshAfterCreate: this.RefreshAfterCreate,
     //            RefreshAfterSave: this.RefreshAfterSave,
     //            SortOrder: this.SortOrder,
-    //            NewBtnBehavoir: this.NewBtnBehavoir,
-    //            BooleanEditorBehavoir: this.BooleanEditorBehavoir,
+    //            NewBtnBehavior: this.NewBtnBehavior,
+    //            BooleanEditorBehavior: this.BooleanEditorBehavior,
     //            EntityFields: this.EntityFields,
     //            EntityConditions: this.EntityConditions,
     //            ChildConfigurations: this.ChildConfigurations
@@ -4714,9 +4714,9 @@ function DisplaySelectedEntityInfo(li, schema) {
     $('#refreshaftersave_check').prop('checked', _thisGlobals._CurConfiguration.RefreshAfterSave);
     $('#pastefromexcel_check').prop('checked', _thisGlobals._CurConfiguration.PasteFromExcel);
     $('#maxrecordperpage').val(_thisGlobals._CurConfiguration.RecordsPerPage);
-    $('#createnewbtnclick').val(_thisGlobals._CurConfiguration.NewBtnBehavoir);
-    $('#booleaneditorbehaviour').val(_thisGlobals._CurConfiguration.BooleanEditorBehavoir);
-    $('#openrecordbehavoir').val(_thisGlobals._CurConfiguration.OpenRecordBehavoir);
+    $('#createnewbtnclick').val(_thisGlobals._CurConfiguration.NewBtnBehavior);
+    $('#booleaneditorbehaviour').val(_thisGlobals._CurConfiguration.BooleanEditorBehavior);
+    $('#openrecordbehavior').val(_thisGlobals._CurConfiguration.OpenRecordBehavior);
     $('#datetimeeditorminutestep').val(_thisGlobals._CurConfiguration.DateTimeMinuteStep);
     RetreiveEntityMetadata(schema);
 }
@@ -4820,8 +4820,8 @@ function LoadDCrmEGConfiguration() {
             data.RefreshAfterCreate = ((tmp.length > 14) ? tmp[14] : true);
             data.RefreshAfterSave = ((tmp.length > 15) ? tmp[15] : false);
             data.SortOrder = ((tmp.length > 16) ? ((tmp[16].length > 0) ? tmp[16] : undefined) : undefined);
-            data.NewBtnBehavoir = ((tmp.length > 17) ? tmp[17] : undefined);
-            data.BooleanEditorBehavoir = ((tmp.length > 18) ? tmp[18] : undefined);
+            data.NewBtnBehavior = ((tmp.length > 17) ? tmp[17] : undefined);
+            data.BooleanEditorBehavior = ((tmp.length > 18) ? tmp[18] : undefined);
             data.HideAutosaveButton = ((tmp.length > 19) ? tmp[19] : undefined);
             data.GridTitle = ((tmp.length > 20) ? tmp[20] : undefined);
             data.DisplayClearFilterButton = ((tmp.length > 21) ? tmp[21] : true);
@@ -4830,7 +4830,7 @@ function LoadDCrmEGConfiguration() {
             data.DisplaySetRecordState = ((tmp.length > 24) ? tmp[24] : true);
             data.DisplayCloneRecord = ((tmp.length > 25) ? tmp[25] : true);
             data.DisplayCloneRecordButton = ((tmp.length > 26) ? tmp[26] : true);
-            data.OpenRecordBehavoir = ((tmp.length > 27) ? tmp[27] : undefined);
+            data.OpenRecordBehavior = ((tmp.length > 27) ? tmp[27] : undefined);
             data.PasteFromExcel = ((tmp.length > 28) ? tmp[28] : false);
             data.DateTimeMinuteStep = ((tmp.length > 29) ? tmp[29] : undefined);
             
@@ -5034,8 +5034,8 @@ function SaveDCrmEGConfiguration() {
         + _thisGlobals.DCrmEGConfiguration[i].RefreshAfterCreate + _thisGlobals._SEPERATOR
         + _thisGlobals.DCrmEGConfiguration[i].RefreshAfterSave
         + _thisGlobals._SEPERATOR + CheckValue(_thisGlobals.DCrmEGConfiguration[i].SortOrder)
-        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].NewBtnBehavoir
-        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].BooleanEditorBehavoir
+        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].NewBtnBehavior
+        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].BooleanEditorBehavior
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].HideAutosaveButton
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].GridTitle
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].DisplayClearFilterButton
@@ -5044,7 +5044,7 @@ function SaveDCrmEGConfiguration() {
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].DisplaySetRecordState
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].DisplayCloneRecord
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].DisplayCloneRecordButton
-        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].OpenRecordBehavoir
+        + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].OpenRecordBehavior
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].PasteFromExcel
         + _thisGlobals._SEPERATOR + _thisGlobals.DCrmEGConfiguration[i].DateTimeMinuteStep;
         
@@ -5111,8 +5111,8 @@ function SaveDCrmEGConfigurationInternal(config) {
     + config.RefreshAfterCreate + _thisGlobals._SEPERATOR
     + config.RefreshAfterSave
     + _thisGlobals._SEPERATOR + CheckValue(config.SortOrder)
-    + _thisGlobals._SEPERATOR + config.NewBtnBehavoir
-    + _thisGlobals._SEPERATOR + config.BooleanEditorBehavoir
+    + _thisGlobals._SEPERATOR + config.NewBtnBehavior
+    + _thisGlobals._SEPERATOR + config.BooleanEditorBehavior
     + _thisGlobals._SEPERATOR + config.HideAutosaveButton
     + _thisGlobals._SEPERATOR + config.GridTitle
     + _thisGlobals._SEPERATOR + config.DisplayClearFilterButton
@@ -5121,7 +5121,7 @@ function SaveDCrmEGConfigurationInternal(config) {
     + _thisGlobals._SEPERATOR + config.DisplaySetRecordState
     + _thisGlobals._SEPERATOR + config.DisplayCloneRecord
     + _thisGlobals._SEPERATOR + config.DisplayCloneRecordButton
-    + _thisGlobals._SEPERATOR + config.OpenRecordBehavoir
+    + _thisGlobals._SEPERATOR + config.OpenRecordBehavior
     + _thisGlobals._SEPERATOR + config.PasteFromExcel
     + _thisGlobals._SEPERATOR + config.DateTimeMinuteStep;
     

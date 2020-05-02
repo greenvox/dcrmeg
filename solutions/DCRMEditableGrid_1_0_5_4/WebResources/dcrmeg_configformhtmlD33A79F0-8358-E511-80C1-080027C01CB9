@@ -131,10 +131,10 @@
                     </div>
                     <div class="group">
                         <div class="col span_2_of_3">
-                            <label for="openrecordbehavoir" class="ElipseText" id="openrecordbehavoirlabel">Open record button behavior</label>
+                            <label for="openrecordbehavior" class="ElipseText" id="openrecordbehaviorlabel">Open record button behavior</label>
                         </div>
                         <div class="col span_1_of_4">
-                            <select id="openrecordbehavoir" class="displayonentityclass">
+                            <select id="openrecordbehavior" class="displayonentityclass">
                                 <option value="10" selected="selected">Same window</option>
                                 <option value="20">New window</option>
                             </select>

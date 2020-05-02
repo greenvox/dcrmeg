@@ -297,7 +297,7 @@
               <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
               <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
               <Format></Format>
-              <MaxLength>10000</MaxLength>
+              <MaxLength>20000</MaxLength>
               <displaynames>
                 <displayname description="Entities Info" languagecode="1033" />
               </displaynames>

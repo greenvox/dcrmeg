@@ -7975,7 +7975,7 @@ function CreateGridContainers(data, parentcontainer) {
 
     // Table
     containerIds.Table = _thisHelpers.GenerateUUID();
-    var $Grid = $('<table class="pure-table tablesorter"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
+    var $Grid = $('<table class="pure-table tablesorter freezer"><thead><tr></tr></thead><tbody></tbody><tfoot><tr></tr></tfoot></table>')
         .attr('id', containerIds.Table)
         .attr('data-item-schema', data.Entity.SchemaName)
         .attr('data-item-entityname', data.Entity.Label)
@@ -10206,7 +10206,7 @@ function CreateAndPopulateGrid(data, parentcontainer, relationshipparentEntityGu
         if ((data.DisplaySum) && ((ed == DCrmEditableGrid.Editors.Numeric) ||
             (ed == DCrmEditableGrid.Editors.Decimal) ||
             (ed == DCrmEditableGrid.Editors.Currency))) {
-            $("<img title='" + _thisGlobals.Translation_Labels.AggregateFunctions + "' class='aggregate'></img><span class='footercelltext'></span>").appendTo($footercellInner);
+            $("<img title='" + _thisGlobals.Translation_Labels.AggregateFunctions + "' class='aggregate' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='></img><span class='footercelltext'></span>").appendTo($footercellInner);
         } else {
             $("<span class='footercelltext'></span>").appendTo($footercellInner);
         }

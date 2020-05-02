@@ -7,16 +7,16 @@
     <Descriptions>
       <Description description="A zero code editable grid for CRM 2013, 2015, and 2016." languagecode="1033" />
     </Descriptions>
-    <Version>1.0.5.4</Version>
+    <Version>1.0.6.0</Version>
     <Managed>0</Managed>
     <ConfigurationPage>dcrmeg_solutionconfig</ConfigurationPage>
     <Publisher>
-      <UniqueName>mehrdadhatteffi</UniqueName>
+      <UniqueName>sarfrazkhan</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="Mehrdad Hatteffi" languagecode="1033" />
+        <LocalizedName description="Sarfraz Khan" languagecode="1033" />
       </LocalizedNames>
       <Descriptions />
-      <EMailAddress>mehrhat@gmail.com</EMailAddress>
+      <EMailAddress>sarfraz.khan@mcaconnect.com</EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <CustomizationPrefix>dcrmeg</CustomizationPrefix>
       <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
@@ -24,9 +24,9 @@
         <Address>
           <AddressNumber>1</AddressNumber>
           <AddressTypeCode>1</AddressTypeCode>
-          <City>Ottawa</City>
+          <City>Dallas</City>
           <County xsi:nil="true"></County>
-          <Country>Canada</Country>
+          <Country>USA</Country>
           <Fax xsi:nil="true"></Fax>
           <FreightTermsCode xsi:nil="true"></FreightTermsCode>
           <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
@@ -40,7 +40,7 @@
           <PostOfficeBox xsi:nil="true"></PostOfficeBox>
           <PrimaryContactName xsi:nil="true"></PrimaryContactName>
           <ShippingMethodCode>1</ShippingMethodCode>
-          <StateOrProvince>Ontario</StateOrProvince>
+          <StateOrProvince>Texas</StateOrProvince>
           <Telephone1 xsi:nil="true"></Telephone1>
           <Telephone2 xsi:nil="true"></Telephone2>
           <Telephone3 xsi:nil="true"></Telephone3>
