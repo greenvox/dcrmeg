@@ -7,7 +7,7 @@
     <Descriptions>
       <Description description="A zero code editable grid for CRM 2013, 2015, and 2016." languagecode="1033" />
     </Descriptions>
-    <Version>1.0.6.2</Version>
+    <Version>1.0.6.3</Version>
     <Managed>0</Managed>
     <ConfigurationPage>dcrmeg_solutionconfig</ConfigurationPage>
     <Publisher>
